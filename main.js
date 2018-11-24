@@ -6,16 +6,12 @@
 
 // ここにisOddNumber関数を作る
 function isOddNumber(number) {
-  if (number % 3) {
-    console.log("9を入力すると期待する結果: true");
-  } else {
-    console.log("14を入力すると期待する結果: false");
-  }
+return number % 2 ===1;
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
-console.log(isOddNumber(14));
-console.log(isOddNumber(9));
+console.log('9を入力したらtureが返る', isOddNumber(9));
+console.log('14を入力したらfalseが返る', isOddNumber(14));
 
 // 課題2: 引数に渡した「1」以上の整数をつかって階乗の結果を返す「factorial関数」を作る (階乗とは: https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97)
 //   - 関数式の形式で作ること
