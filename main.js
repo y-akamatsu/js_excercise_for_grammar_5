@@ -5,18 +5,17 @@
 //     - 入力: 14, 期待する結果: false
 
 // ここにisOddNumber関数を作る
-function isOddNumber(number){
-  if( number % 3 ){
-    console.log("期待する結果: true");
+function isOddNumber(number) {
+  if (number % 3) {
+    console.log("9を入力すると期待する結果: true");
   } else {
-    console.log("期待する結果: false");
+    console.log("14を入力すると期待する結果: false");
   }
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
-console.log(isOddNumber(9));
 console.log(isOddNumber(14));
-
+console.log(isOddNumber(9));
 
 // 課題2: 引数に渡した「1」以上の整数をつかって階乗の結果を返す「factorial関数」を作る (階乗とは: https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97)
 //   - 関数式の形式で作ること
@@ -29,10 +28,16 @@ console.log(isOddNumber(14));
 //     3. 【チャレンジ問題】再帰関数を使ったやり方(参考記事: https://qiita.com/chuck0523/items/2c40a5da90a1d73ab956)
 
 // ここにfactorial関数を作る
-
-
+const factorial = function(num) {
+  let results = 1;
+  for(let i = num; i >0; i--) {
+    results *= i;
+  }
+  return results;
+}
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する
-
+console.log("4を入力したら期待する結果は24である:", factorial(4));
+console.log("5を入力したら期待する結果は120である", factorial(5));
 
 
 // 課題3: 引数に渡した、全ての小文字の文字列の先頭1文字を大文字に変換した文字列を返す「convertFirstCharacterToUpperCase関数」を作る
