@@ -5,10 +5,17 @@
 //     - 入力: 14, 期待する結果: false
 
 // ここにisOddNumber関数を作る
-
+function isOddNumber(number){
+  if( number % 3 ){
+    console.log("期待する結果: true");
+  } else {
+    console.log("期待する結果: false");
+  }
+}
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
-
+console.log(isOddNumber(9));
+console.log(isOddNumber(14));
 
 
 // 課題2: 引数に渡した「1」以上の整数をつかって階乗の結果を返す「factorial関数」を作る (階乗とは: https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97)
