@@ -6,7 +6,8 @@
 
 // ここにisOddNumber関数を作る
 function isOddNumber(number) {
-return number % 2 ===1;
+  // === 厳密等価演算子：引数に２で割れれない整数(奇数）入力されたならtrueを返す
+return number % 2 === 1;
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
@@ -42,8 +43,17 @@ console.log("5を入力したら期待する結果は120である", factorial(5)
 //     - 入力: 'hello', 期待する結果: 'Hello'
 //     - 入力: 'world', 期待する結果: 'World'
 //   - 「先頭1文字を大文字にするやり方」の参考記事: https://qiita.com/ichironagata/items/091f8cd629b82b0dcbf8
+//charAT()  => 文字列の中から指定の位置の文字を返します。text.charAt(インデックス番号)
+//toUpperCase() => 文字列の中から指定の位置の文字を返します。
+//.slice()=> 文字列の中から開始位置から終了位置までの部分文字列を取り出し新しい文字列として返す。
+//slice(start[, end])インデックス番号 endを書かなければその文字列の最後まで
+
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
-
+const convertFirstCharacterToUpperCase = (text) => {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+};
 
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
+console.log('"hello"と入力し"Hello"と返される', convertFirstCharacterToUpperCase('hello'));
+console.log('"world"と入力し"Hello"と返される', convertFirstCharacterToUpperCase('World'));
