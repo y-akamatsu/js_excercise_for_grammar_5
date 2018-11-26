@@ -3,9 +3,7 @@
 //   - 「isOddNumber関数」を定義した後に、console.logを使って「isOddNumber関数」の引数に次の数を入力して、期待している結果が返ってくること確認する
 //     - 入力: 9, 期待する結果: true
 //     - 入力: 14, 期待する結果: false
-
 // ここにisOddNumber関数を作る
-
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
 
@@ -39,6 +37,5 @@
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
 
+
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
-
-
