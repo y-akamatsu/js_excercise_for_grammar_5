@@ -4,12 +4,9 @@
 //     - 入力: 9, 期待する結果: true
 //     - 入力: 14, 期待する結果: false
 // ここにisOddNumber関数を作る
-function isOddNumber(num) {
-  return num % 3 === 0;
-}
+
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
-console.log('期待する値はtrue:', isOddNumber(9));
-console.log('期待する値はfalse:', isOddNumber(14));
+
 
 // 課題2: 引数に渡した「1」以上の整数をつかって階乗の結果を返す「factorial関数」を作る (階乗とは: https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97)
 //   - 関数式の形式で作ること
@@ -22,17 +19,8 @@ console.log('期待する値はfalse:', isOddNumber(14));
 //     3. 【チャレンジ問題】再帰関数を使ったやり方(参考記事: https://qiita.com/chuck0523/items/2c40a5da90a1d73ab956)
 
 // ここにfactorial関数を作る
-function factorial(num) {
-  let result = 1;
-  for (let i = num; i > 0; i--) {
-    result *= i; //result = result * iと同じ
-  }
-  return result;
-}
 
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する
-console.log('4を入力すると期待される値は24である', factorial(4));
-console.log('5を入力すると期待される値は120である', factorial(5));
 
 //チャレンジ問題　再起関数
 
