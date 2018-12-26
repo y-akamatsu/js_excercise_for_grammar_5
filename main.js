@@ -1,3 +1,4 @@
+
 // 課題1: 引数に渡した数値(整数)に応じて、奇数なら「true」、偶数なら「false」を返す「isOddNumber関数」を作る
 //   - 関数宣言の形式で作ること
 //   - 「isOddNumber関数」を定義した後に、console.logを使って「isOddNumber関数」の引数に次の数を入力して、期待している結果が返ってくること確認する
@@ -5,12 +6,9 @@
 //     - 入力: 14, 期待する結果: false
 // ここにisOddNumber関数を作る
 
-function isOddNumber(num){
-  return num % 3 === 0;
 } 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
-console.log('9を入力したらtrueが返る', isOddNumber(9));
-console.log('14を入力したらfalseが返る', isOddNumber(14));
+
 
 // 課題2: 引数に渡した「1」以上の整数をつかって階乗の結果を返す「factorial関数」を作る (階乗とは: https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97)
 //   - 関数式の形式で作ること
@@ -23,16 +21,9 @@ console.log('14を入力したらfalseが返る', isOddNumber(14));
 //     3. 【チャレンジ問題】再帰関数を使ったやり方(参考記事: https://qiita.com/chuck0523/items/2c40a5da90a1d73ab956)
 
 // ここにfactorial関数を作る
-const factorial  = function(num){
-let result = 1;
-for(let i = num; i > 0; i--){
- result *= i;
-}
-return result
-}
+
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する
-console.log('期待する値は24', factorial(4));
-console.log('期待する値は120', factorial(5));
+
 
 //チャレンジ問題　再起関数
 
@@ -48,9 +39,5 @@ console.log('期待する値は120', factorial(5));
 //slice(start[, end])インデックス番号 endを書かなければその文字列の最後まで
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
-const convertFirstCharacterToUpperCase = (text) => {
-  return text.charAt(0).toUpperCase() + text.slice(1);
-}
+
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
-console.log('helloを入力するとHelloが返される', convertFirstCharacterToUpperCase('hello'));
-console.log('worldを入力するとWorldが返される', convertFirstCharacterToUpperCase('world'));
